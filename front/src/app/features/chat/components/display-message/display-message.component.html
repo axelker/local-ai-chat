@@ -1,0 +1,5 @@
+<div *ngFor="let item of getFormatMessages()">
+    <p *ngIf="item.format =='text'" class="text"> {{item.content}}</p>
+    <p *ngIf="item.format =='code'" class="code"> {{item.content}}</p>
+
+</div>

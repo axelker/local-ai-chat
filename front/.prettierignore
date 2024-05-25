@@ -1,0 +1,9 @@
+**.yml
+**.yaml
+**.md
+**.conf
+**/node_modules/*
+"**/dist/**"
+**/.ops/**
+**/.husky/**
+**/.angular/**
