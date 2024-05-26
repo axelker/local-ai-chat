@@ -1,9 +1,11 @@
 <p-fileUpload
-[customUpload]="true"
-(uploadHandler) = "onUploadHandler($event)"
 uploadLabel="Send"
-[multiple]="false"
 accept="image/*" 
+[customUpload]="true"
+[showUploadButton]="useSend"
+[showCancelButton]="useCancel"
+(uploadHandler) = "onUploadHandler($event)"
+[multiple]="false"
 [maxFileSize]="maxFileSize">
     <ng-template pTemplate="content">
         <ul *ngIf="uploadedFiles.length">
@@ -12,8 +14,8 @@ accept="image/*"
             </li>
         </ul>
         <div class="flex align-items-center justify-content-center flex-column">
-                <i class="pi pi-cloud-upload border-2 border-circle p-5 text-8xl text-400 border-400"></i>
-                <p class="mt-4 mb-0">Drag and drop files to here to upload.</p>
-            </div>
+                <i class="pi pi-cloud-upload border-2 border-circle p-2 text-400 border-400"></i>
+                <p class="">Drag and drop files to here to upload.</p>
+        </div>
     </ng-template>
 </p-fileUpload>
