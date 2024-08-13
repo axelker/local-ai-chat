@@ -1,6 +1,6 @@
 
 # Local Chat
-Local chat using Angular 16,  Ollama & Llama3
+Local chat using Angular 16 - Flask 2.1 - Ollama  - Llama3
 
 # Ollama
 - Download ollama.
