@@ -1,0 +1,7 @@
+chromadb
+gpt4all
+pymupdf
+langchain-community
+langchain-core
+langchain
+jq
