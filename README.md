@@ -15,9 +15,9 @@ Local chat using Angular 16,  Ollama & Llama3
 
 
 # Run Back
-- Définir les variables d'environments : export FLASK_APP=app
-Env de dev : 
-export FLASK_ENV=development
+- Définir les variables d'environments :  export FLASK_APP=app
+- Env de dev : export FLASK_ENV=development
+- flask run
 
 # Start fort the front
 - npm install
