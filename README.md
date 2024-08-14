@@ -27,3 +27,4 @@ npm start
 
 # Sample rag
 This repo is an exemple to make a rag with json and pdf data.
+(Use wsl terminal for install requirement.txt)
