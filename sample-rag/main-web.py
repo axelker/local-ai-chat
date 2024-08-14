@@ -13,7 +13,7 @@ import time as timer
 def extract_text_from_web(url):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
-    web_text = soup.get_text(separator=' ')  # Séparateur pour éviter que tout le texte soit collé
+    web_text = soup.get_text(separator=' ')  # Text separator
     return web_text
 
 # URL web page
