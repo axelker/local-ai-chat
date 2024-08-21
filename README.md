@@ -1,6 +1,7 @@
 
 # Local AI Chat
-Local AI chat using Angular 16 - Flask 2.1 - Ollama  - Llama3 - LLava - LangChain
+Using Angular 16 - Flask 2.1 - Ollama  - Llama3 - LLava - LangChain.
+Local AI Chat with Image Recognition is an advanced web application that combines real-time conversation capabilities with powerful image recognition features. Leveraging state-of-the-art technologies, this project offers a comprehensive solution for both text-based and image-based interactions in a secure and customizable local environment.
 
 ## Ollama
 - Download ollama.
