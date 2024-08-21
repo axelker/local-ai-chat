@@ -15,8 +15,8 @@ Local AI chat using Angular 16 - Flask 2.1 - Ollama  - Llama3
 
 
 ## Run Back
-- Définir les variables d'environments :  export FLASK_APP=app
-- Env de dev : export FLASK_ENV=development
+- Define env var :  export FLASK_APP=app
+- DEV env : export FLASK_ENV=development
 - flask run
 
 ## Start for the front
