@@ -1,6 +1,6 @@
 
 # Local AI Chat
-Local AI chat using Angular 16 - Flask 2.1 - Ollama  - Llama3
+Local AI chat using Angular 16 - Flask 2.1 - Ollama  - Llama3 - LLava - LangChain
 
 ## Ollama
 - Download ollama.
