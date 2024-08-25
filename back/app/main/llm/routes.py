@@ -1,6 +1,6 @@
 from flask import Blueprint
 from flask import request,jsonify
-from .services.ollama_service import chat,describe_img
+from .services.ollama_service import chat as chat_ollama,describe_img as describe_img_ollama
 import base64
 
 bp = Blueprint('llm', __name__)
@@ -10,18 +10,18 @@ def chat():
     data = request.get_json()
     if 'inp' in data:
         inp = data['inp']
-        res = chat(inp)
+        res = chat_ollama(inp)
         return jsonify({'message': res.message}),200
-    return jsonify({'error': 'Entrée manquante'}), 400
+    return jsonify({'error': 'Inp in not provided in the request body.'}), 400
 
 @bp.route('/chat/img', methods=['POST'])
 def chat_img():
     if 'img' in request.files:
         img = request.files['img']
-        # Lire le contenu du fichier et le convertir en bytes
+        # Convert img to bytes
         img_bytes = img.read()
-        # Convertir les bytes en base64
+        # Convert to base64
         img_base64 = base64.b64encode(img_bytes).decode('utf-8')
-        res = describe_img(img_base64)
+        res = describe_img_ollama(img_base64)
         return jsonify({'message': res.message}), 200
-    return jsonify({'error': 'Aucune image trouvée'}), 400
+    return jsonify({'error': 'Img in not provided in the request body.'}), 400
