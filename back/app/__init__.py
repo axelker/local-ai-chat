@@ -6,8 +6,8 @@ from flask_cors import CORS
 
 def create_app(config_class=Config):
     app = Flask(__name__)
-    CORS(app) # WAR REDIFINE FOR PROD : Active CORS pour toutes les routes de l'application
     app.config.from_object(config_class)
+    CORS(app, resources={r"/*": {"origins": app.config['ALLOWED_ORIGINS']}})
     app.register_blueprint(main_bp)    
     app.register_blueprint(llm_bp)
 
