@@ -17,8 +17,7 @@ Local AI Chat with Image Recognition is an advanced web application that combine
 
 
 ## Run Back
-- Define env var :  export FLASK_APP=app
-- DEV env : export FLASK_ENV=development
+- Define .env file (Exemple with .env.sample)
 - flask run
 
 ## Start for the front
